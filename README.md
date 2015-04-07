@@ -22,6 +22,7 @@ The model is coded in Python 2.7.  To run it Python 2.7 and one additional libra
   
 5.  Install Pillow by entering at the Windows Command Prompt: pip install Pillow
  
-6.  Finally install the ESCoBox Load Model by entering at the Windows Command Prompt: pip install 
+6.  Finally install the ESCoBox Load Model by entering at the Windows Command Prompt: pip install https://github.com/peterboait/ESCoBox_Load_Model.git 
+7.  Double-clicking on model_gui.py will run the model. Recommend that a shortcut be created by right-clicking on the file and selecting create shortcut, then move the shortcut to the desktop.
 
 
