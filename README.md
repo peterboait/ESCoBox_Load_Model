@@ -1,0 +1,3 @@
+# ESCoBox_Load_Model
+Simulates mini- and micro-grid operation to evaluate load parameters
+More to be added....
