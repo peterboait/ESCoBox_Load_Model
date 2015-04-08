@@ -7,22 +7,26 @@ The purpose of this model is to simulate the operation of electrical appliances 
 INSTALLATION
 The model is coded in Python 2.7.  To run it Python 2.7 and one additional library module must be installed first. The following instructions apply for a Windows 7 or 8 computer:
 
-1. Download and install the latest version of Python 2.7 from  https://www.python.org/downloads/ 
+1. Download and install the latest version of Python 2.7 (2.7.9 or later) from  https://www.python.org/downloads/ 
 
 2. Add Python to the Windows PATH settings:
     - Open the Windows Control Panel
     - In the Control Panel, search for and open System.
     - In the dialog box, select Advanced System Settings
     - In the next dialog, select Environment Variables.
-    - In the User Variables section, edit the PATH statement to include the following (if there is no PATH variable, click         NEW to create one):  C:\Python27;C:\Python27\Lib\site-packages\;C:\Python27\Scripts\;
+    - In the User Variables section, edit the PATH statement to add the following (if there is no PATH variable, click         NEW to create one):  C:\Python27;C:\Python27\Lib\site-packages\;C:\Python27\Scripts\;
   
-3.  Install setup tools from  https://pypi.python.org/pypi/setuptools To do this, download  ez_setup.py from the website, preferably so it is on the desktop.  Then open IDLE which is one of the Python programs installed at step 1, and from its File menu open ez_setup.py.  This will open in a new window, select the Run menu and Run module.  
-  
-4.  Install pip by opening a Windows Command Prompt and entering:  easy_install pip
-  
-5.  Install Pillow by entering at the Windows Command Prompt: pip install Pillow
+3.  Install Pillow by entering at the Windows Command Prompt: pip install Pillow
  
-6.  Finally install the ESCoBox Load Model by entering at the Windows Command Prompt: pip install https://github.com/peterboait/ESCoBox_Load_Model.git 
-7.  Double-clicking on model_gui.py will run the model. Recommend that a shortcut be created by right-clicking on the file and selecting create shortcut, then move the shortcut to the desktop.
+4.  Download the model as a zip file by clicking the button "Download ZIP" on the right hand side of the ESCoBox_Load_Model home page on GitHub (https://github.com/peterboait/ESCoBox_Load_Model/)   
+
+5.  Unzip the download and browse down the unzipped folders to /nested/... This contains the code modules. Double-clicking on model_gui.py should run the model. Recommend that a shortcut be created by right-clicking on that file and selecting create shortcut, then move the shortcut to the desktop.  If double clicking does not work, open the IDLE program that will have been installed in step 1, from the File menu click Open and browse to model_gui.py and open it. This will come up in a new window, select Run and Run module - this should run the model.  
+
+OPERATION
+To demonstrate operation, click the "Open model" button. This opens the "nested" directory".  Look for the folder called model_inputs and open that. Select one of the files in it and open.  This populates the model with some example data which can be run using either of the "Run model-month" or "Run model-year" buttons.  Note the year run can take 15 minutes or more.
+
+To create a mini-grid model, first decide on the time of day being simulated.  Then set up the appliance population - the numbers of each and their load can be edited if the defaults are not correct.  Select the probability of an appliance being in use from the drop-downs on the right, given the time of day - this does not have to be very accurate so an "intelligent guess" is appropriate. There must be a value in all the data entry cells, should be zero where not used. Then run using the run buttons to determine the peak and average power load that should be expected, and the standard deviation of variation in power expressed as a percentage of the average.
+
+The model entered can be saved using the save button - use the model_inputs directory or create a new one.  This allows multiple models for different times of the day to be easily created for a single set of appliances just by modifying the probability of use drop-down.  
 
 
