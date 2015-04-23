@@ -1,11 +1,11 @@
 # ESCoBox_Load_Model
-Simulates mini- and micro-grid operation to evaluate load parameters
+Developed at De Montfort University under the OASYS and ESCoBox projects. Simulates mini- and micro-grid operation to evaluate load parameters
 
 INTRODUCTION
 The purpose of this model is to simulate the operation of electrical appliances commonly required by users of developing world mini- and micro-grids, such as lighting, mobile phone chargers, ceiling fans, refrigerators.  Because of the relatively small numbers of appliances on such grids, the total electrical load they present is highly stochastic and prediction of the maximum load they are likely to present is difficult by conventional methods.  The model comprises a Monte Carlo simulation which simply randomly determines in each time interval whether an appliance is running or not using a probability of use parameter. All appliances are then added together to give the load for that interval. This is repeated many times to give a month or year's operation, with the assumption that each random determination across the population represents one minute.  A user interface provides a default set of appliances and the load each type is likely to present, with the ability to add, change, save, and load an appliance population.
 
 NOTE
-As prototype open surce software, it is published in the hope that it is useful but no warranty of fitness for purpose is given.
+As prototype open source software copyright of De Montfort University, it is published in the hope that it is useful but no warranty of fitness for purpose is given.
 
 INSTALLATION
 The model is coded in Python 2.7.  To run it Python 2.7 and one additional library module must be installed first. The following instructions apply for a Windows 7 or 8 computer:
